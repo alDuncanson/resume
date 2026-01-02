@@ -1,7 +1,7 @@
 ---
 geometry: margin=2cm
 header-includes:
-- \pagenumbering{gobble}
+  - \pagenumbering{gobble}
 ---
 
 # Al Duncanson
