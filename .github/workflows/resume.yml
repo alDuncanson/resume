@@ -16,38 +16,16 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Build resume
-        uses: alDuncanson/scribe@main
-
-      - name: Upload PDF artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: resume-pdf
-          path: resume.pdf
-
-      - name: Setup Pages
-        if: github.ref == 'refs/heads/main'
-        uses: actions/configure-pages@v5
-
-      - name: Upload Pages artifact
-        if: github.ref == 'refs/heads/main'
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-
-  deploy:
-    if: github.ref == 'refs/heads/main'
-    needs: build
+  build-and-deploy:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.scribe.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - uses: actions/checkout@v4
+
+      - name: Build and deploy resume
+        id: scribe
+        uses: alDuncanson/scribe@main
+        with:
+          deploy: ${{ github.ref == 'refs/heads/main' }}
