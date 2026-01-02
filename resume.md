@@ -6,7 +6,7 @@ header-includes:
 
 # Al Duncanson
 
-Grand Rapids, MI -- <alDuncanson@proton.me> -- (810) 962-168
+Grand Rapids, MI -- <alDuncanson@proton.me>
 
 ## Notable experience
 
