@@ -7,7 +7,7 @@ A single-source resume written in Markdown, automatically converted to PDF and H
 ![Resume Preview](https://alduncanson.github.io/resume/preview.png)
 
 [View HTML](https://alduncanson.github.io/resume/) |
-[Download PDF](https://github.com/alDuncanson/resume/actions) (see latest build artifacts)
+[Download PDF](https://alduncanson.github.io/resume/resume.pdf)
 
 ## How It Works
 
