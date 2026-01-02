@@ -20,12 +20,12 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.scribe.outputs.page_url }}
+      url: ${{ steps.md-press.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
       - name: Build and deploy resume
-        id: scribe
-        uses: alDuncanson/scribe@main
+        id: md-press
+        uses: alDuncanson/md-press@v0.1.1
         with:
           deploy: ${{ github.ref == 'refs/heads/main' }}
