@@ -46,6 +46,17 @@ client needs.
 
 ## Some of my open source
 
+### Handler
+
+_Open-source A2A Protocol client and developer toolkit_
+
+I created and maintain Handler, an enterprise-ready client and toolkit for the
+A2A (Agent-to-Agent) Protocol. Built with Python, Handler provides a CLI, TUI,
+MCP server, and reference agent implementation for communicating with remote AI
+agents. It enables developers to send messages, stream responses, manage
+sessions, inspect tasks, and debug agent interactions from the terminal or any
+MCP-compatible host like Claude, Cursor, or Gemini CLI.
+
 ### Ginseng
 
 _Free and direct file sharing, globally_
