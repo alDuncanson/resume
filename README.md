@@ -1,5 +1,7 @@
 # Resume
 
+[![Build and Deploy Resume](https://github.com/alDuncanson/resume/actions/workflows/resume.yml/badge.svg)](https://github.com/alDuncanson/resume/actions/workflows/resume.yml)
+
 A single-source resume written in Markdown, automatically converted to PDF and HTML.
 
 ## Preview
