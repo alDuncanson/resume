@@ -21,10 +21,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install pandoc
+      - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc
+          sudo apt-get install -y pandoc poppler-utils
 
       - name: Install tectonic
         uses: wtfjoke/setup-tectonic@v3
@@ -36,6 +36,9 @@ jobs:
 
       - name: Generate HTML
         run: pandoc -s resume.md -o index.html
+
+      - name: Generate preview image
+        run: pdftoppm resume.pdf preview -png -singlefile -rx 150 -ry 150
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
