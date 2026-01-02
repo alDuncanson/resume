@@ -68,15 +68,6 @@ encryption, no third-party servers, and no accounts required. The project uses
 Nix for reproducible builds and includes automated CI/CD for cross-platform
 releases.
 
-### React Hooks Snippets
-
-_Visual Studio Code extension, code snippets for React Hooks_
-
-I created and maintain a VS Code extension for React Hooks snippets that's been
-widely adopted by the React developer community. The extension provides quick
-code snippets for all React Hooks, including the latest additions in React v19,
-helping developers write React code faster and more efficiently.
-
 ## Education
 
 _Grand Valley State University_ | _2013-2018_
