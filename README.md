@@ -2,7 +2,12 @@
 
 [![Build and Deploy Resume](https://github.com/alDuncanson/resume/actions/workflows/resume.yml/badge.svg)](https://github.com/alDuncanson/resume/actions/workflows/resume.yml)
 
-Powered by [md-press](https://github.com/alDuncanson/md-press). Use this template to create your own resume—it will be processed and hosted for free.
+Published for free with [md-press](https://github.com/alDuncanson/md-press).
+
+Use this template to create your own resume—it will be published to your
+personal
+[GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
+site at `username.github.io/resume` automatically.
 
 ## Preview
 
