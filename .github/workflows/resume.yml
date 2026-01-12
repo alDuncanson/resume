@@ -26,6 +26,6 @@ jobs:
 
       - name: Build and deploy resume
         id: md-press
-        uses: alDuncanson/md-press@v0.1.4
+        uses: alDuncanson/md-press@main
         with:
-          deploy: ${{ github.ref == 'refs/heads/main' }}
+          deploy: false
