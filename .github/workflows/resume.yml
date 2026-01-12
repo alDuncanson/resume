@@ -25,4 +25,5 @@ jobs:
         id: md-press
         uses: alDuncanson/md-press@main
         with:
+          source: resume.md
           deploy: false
