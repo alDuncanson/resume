@@ -11,7 +11,7 @@ site at `username.github.io/resume` automatically.
 
 ## Preview
 
-![Resume Preview](https://alduncanson.github.io/resume/preview.png)
+![Resume Preview](https://alduncanson.github.io/resume/resume.png)
 
 [View HTML](https://alduncanson.github.io/resume/) |
 [Download PDF](https://alduncanson.github.io/resume/resume.pdf)
