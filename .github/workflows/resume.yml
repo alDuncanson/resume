@@ -27,8 +27,7 @@ jobs:
 
       - name: Build and deploy resume
         id: md-press
-        uses: alDuncanson/md-press@v0.2.0
+        uses: alDuncanson/md-press@v0.3.0
         with:
           source: resume.md
           output-pdf: resume.pdf
-          deploy: ${{ github.event_name != 'pull_request' }}
