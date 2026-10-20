@@ -10,24 +10,25 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  pull-requests: write
 
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: ${{ github.event_name == 'pull_request' && format('preview-{0}', github.ref) || 'pages' }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     environment:
-      name: github-pages
+      name: ${{ github.event_name != 'pull_request' && 'github-pages' || '' }}
       url: ${{ steps.md-press.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Build and deploy resume
         id: md-press
-        uses: alDuncanson/md-press@v0.1.6
+        uses: alDuncanson/md-press@v0.2.0
         with:
           source: resume.md
           output-pdf: resume.pdf
-          deploy: ${{ github.ref == 'refs/heads/main' }}
+          deploy: ${{ github.event_name != 'pull_request' }}
